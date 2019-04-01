@@ -9,4 +9,27 @@
     { "key": "alt+1",                   "command": "workbench.action.focusFirstEditorGroup" },
     { "key": "alt+2",                   "command": "workbench.action.focusSecondEditorGroup" },
     { "key": "alt+3",                   "command": "workbench.action.focusThirdEditorGroup" },
+    
+    {
+        "key": "ctrl+up",
+        "when": "editorTextFocus",
+        "command": "editorScroll",
+        "args": {
+            "to": "up",
+            "by": "line",
+            "value": 1,
+            "revealCursor": true
+        }
+    },
+    {
+        "key": "ctrl+down",
+        "when": "editorTextFocus",
+        "command": "editorScroll",
+        "args": {
+            "to": "down",
+            "by": "line",
+            "value": 1,
+            "revealCursor": true
+        }
+    },
 ]
