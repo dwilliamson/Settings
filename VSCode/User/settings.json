@@ -1,15 +1,45 @@
+// Place your settings in this file to overwrite the default settings
 {
-    "extensions.ignoreRecommendations": false,
-    "files.associations": {
-        "*.h": "cpp"
-    },
-    "workbench.editor.enablePreview": false,
-    "editor.autoClosingBrackets": false,
+    "editor.autoClosingBrackets": "never",
+    "editor.autoClosingQuotes": "never",
+    "editor.codeLens": false,
     "editor.dragAndDrop": false,
-    "editor.renderLineHighlight": "all",
     "editor.folding": false,
-    "editor.rulers": [
-        80, 100, 120
-    ],
-    "window.title": "${dirty}${rootName}${separator}${activeEditorLong}",
+    "editor.fontFamily": "Courier New",
+    "editor.fontWeight": "200",
+    "editor.quickSuggestions": false,       // This disables string suggestions but ALSO disables local variables so keep it on
+    "editor.renderWhitespace": "all",
+    "editor.rulers": [ 80, 100 ],
+    "editor.snippetSuggestions": "none",    // This combined with above seems to completely eliminate string suggestions
+    "editor.wordBasedSuggestions": false,   // Disable world-based suggestions being annoying in string editing (still some active)
+    "explorer.autoReveal": false,
+    "explorer.openEditors.visible": 0,
+    "files.hotExit": "onExitAndWindowClose",
+
+    // VSCode still opens different-cased files in a different editor:
+    //    https://github.com/Microsoft/vscode/issues/12448
+    //
+    // These remain in the history and make it impossible to ignore so turn off history altogether.
+    "search.quickOpen.includeHistory": false,
+
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "window.title": "${dirty}${rootName}${separator}${activeEditorMedium}",
+    "window.titleBarStyle": "custom",
+    "window.restoreWindows": "all",
+    "window.zoomLevel": 0,
+    "workbench.editor.enablePreview": false,
+    "[Log]": {
+        "editor.wordWrap":"off"
+    },
+    "[markdown]": {
+        "editor.quickSuggestions": false,
+        "editor.wordWrap": "wordWrapColumn",
+        "editor.wordWrapColumn": 100,
+    },
+    "files.associations": {
+        "*.pibfile": "python",
+        "*.fsh": "hlsl",
+        "*.csh": "hlsl"
+    },
 }
