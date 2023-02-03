@@ -12,6 +12,10 @@
 
     { "key": "ctrl+pausebreak",              "command": "workbench.action.tasks.terminate" },
 
+    { "key": "alt+O", "command": "clangd.switchheadersource" },
+
+    { "key": "f4", "command": "workbench.action.tasks.runTask", "args": "p4edit" },
+
     // Visual Studio style Control Up/Down
     {
         "key": "ctrl+up",
@@ -34,5 +38,29 @@
             "value": 1,
             "revealCursor": true,
         }
+    },
+    {
+        "key": "ctrl+p",
+        "when": "editorTextFocus",
+        "command": "editorScroll",
+        "args": {
+            "to": "up",
+            "by": "halfPage",
+            "revealCursor": true
+        }
+    },
+    {
+        "key": "ctrl+l",
+        "when": "editorTextFocus",
+        "command": "editorScroll",
+        "args": {
+            "to": "down",
+            "by": "halfPage",
+            "revealCursor": true
+        }
+    },
+    {
+        "key": "ctrl+backspace",
+        "command": "extension.jumpy-word"
     },
 ]
